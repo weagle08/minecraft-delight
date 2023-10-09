@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+    minecraft-bedrock:
+        image: minecraft-delight:0.0.2
+        ports:
+            - 19132:19132/udp
+        environment:
+            - EULA=true
+            - PACKAGE_BACKUP_KEEP=5
+
+            # PERMISSIONS
+            - OPS=2623078711549468
+
+            # MINECRAFT SPECIFIC PROPERTIES
+            - SERVER_NAME=minecraft-delight
+            - LEVEL_NAME=minecraft-delight
+            - GAMEMODE=survival
+            - DIFFICULTY=hard
+            - ALLOW_CHEATS=false
+            - TICK_DISTANCE=6
+            - PLAYER_IDLE_TIMEOUT=0
+        stdin_open: true
+        tty: true
+        # restart: unless-stopped
+        volumes:
+            - /minecraft-data:/data
