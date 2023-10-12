@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Blocks for Minecraft Delight",
+        "name": "the-blocks",
+        "uuid": "4cee5896-6af4-4c76-8ad5-d75c3dd0456a",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            18,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Environment resources",
+            "type": "resources",
+            "uuid": "3e6792a1-1244-4525-9f18-5b45bbafacac",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

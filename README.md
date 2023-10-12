@@ -5,9 +5,10 @@ minecraft bedrock server settings for private server
 - default container: 
     - https://hub.docker.com/r/itzg/minecraft-bedrock-server
 
-# tips
-- turn on coordinates: `gamerule showcoordinates true`
-- allow cheats: `changesetting allow-cheats true`
+# tips (in the in-game chat type the following)
+- turn on coordinates: `/gamerule showcoordinates true`
+- turn on 1 player sleep: `/gamerule playersSleepingPercentage 0`
+- allow cheats: `/changesetting allow-cheats true`
 
 ## loading resource
 - cd to worlds/[my-world]
