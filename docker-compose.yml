@@ -1,7 +1,7 @@
 version: '3.8'
 services:
     minecraft-bedrock:
-        image: minecraft-delight:0.0.2
+        image: minecraft-delight:0.0.3
         ports:
             - 19132:19132/udp
         environment:
@@ -14,13 +14,14 @@ services:
             # MINECRAFT SPECIFIC PROPERTIES
             - SERVER_NAME=minecraft-delight
             - LEVEL_NAME=minecraft-delight
-            - GAMEMODE=survival
+            - LEVEL_SEED=-2475264046802683271
+            - GAMEMODE=creative
             - DIFFICULTY=hard
             - ALLOW_CHEATS=false
             - TICK_DISTANCE=6
             - PLAYER_IDLE_TIMEOUT=0
         stdin_open: true
         tty: true
-        # restart: unless-stopped
+        restart: unless-stopped
         volumes:
             - /minecraft-data:/data
