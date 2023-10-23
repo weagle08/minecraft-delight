@@ -15,7 +15,7 @@ services:
             - SERVER_NAME=minecraft-delight
             - LEVEL_NAME=minecraft-delight
             - LEVEL_SEED=-2475264046802683271
-            - GAMEMODE=creative
+            - GAMEMODE=survival
             - DIFFICULTY=hard
             - ALLOW_CHEATS=false
             - TICK_DISTANCE=6
