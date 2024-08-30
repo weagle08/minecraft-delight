@@ -21,7 +21,7 @@ services:
             - TICK_DISTANCE=6
             - PLAYER_IDLE_TIMEOUT=0
             - ALLOW_LIST=true
-            - ALLOW_LIST_USERS=weagle07,f0xBaT,richaka6,drenab,The DeBator13,vicious-cbr
+            - ALLOW_LIST_USERS=weagle07,f0xBaT,richaka6,drenab,The DeBator13,"Vicious cbr",2533274799187633
         stdin_open: true
         tty: true
         restart: unless-stopped
