@@ -1,7 +1,6 @@
-version: '3.8'
 services:
     minecraft-bedrock:
-        image: minecraft-delight:0.0.3
+        image: itzg/minecraft-bedrock-server:latest
         ports:
             - 19132:19132/udp
         environment:
@@ -21,7 +20,7 @@ services:
             - TICK_DISTANCE=6
             - PLAYER_IDLE_TIMEOUT=0
             - ALLOW_LIST=true
-            - ALLOW_LIST_USERS=weagle07,f0xBaT,richaka6,drenab,The DeBator13,Vicious cbr,2533274799187633,Mist3r Skull,Missus Sku1l
+            - ALLOW_LIST_USERS=weagle07,f0xBaT,richaka6,drenab,The DeBator13,Vicious cbr,Mist3r Skull,Missus Sku1l
         stdin_open: true
         tty: true
         restart: unless-stopped
