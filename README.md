@@ -5,7 +5,17 @@ minecraft bedrock server settings for private server
 - default container: 
     - https://hub.docker.com/r/itzg/minecraft-bedrock-server
 
-# tips (in the in-game chat type the following)
+# tips
+- running commands for game rules:  
+    - docker attach [container name]  
+    - gamerule [name] [value]
+
+    - examples:
+        - setworldspawn 0 0 0
+        - gamerule showcoordinates true
+        - gamerule playersSleepPercentage 0
+
+# OLD tips (in the in-game chat type the following)
 - turn on coordinates: `/gamerule showcoordinates true`
 - turn on 1 player sleep: `/gamerule playersSleepingPercentage 0`
 - allow cheats: `/changesetting allow-cheats true`
@@ -36,3 +46,21 @@ How I run scripts on bedrock server hosted on Ubuntu Server 22.04:
 - restart your server, you should see your custom scripts run, any errors will print to the console  
 
 **NOTE: it seems your scripts have to be in a scripts directory no matter where your manifest.json says they are**
+
+
+{
+  "allowed_modules": [
+    "@minecraft/server-gametest",
+    "@minecraft/server",
+    "@minecraft/server-ui",
+    "@minecraft/server-admin",
+    "@minecraft/server-editor"
+  ]
+}
+
+[
+  {
+    "permission": "operator",
+    "xuid": "2623078711549468"
+  }
+]
