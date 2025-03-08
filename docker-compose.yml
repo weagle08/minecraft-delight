@@ -13,7 +13,7 @@ services:
             # MINECRAFT SPECIFIC PROPERTIES
             - SERVER_NAME=minecraft-delight
             - LEVEL_NAME=minecraft-delight
-            - LEVEL_SEED=-2475264046802683271
+            - LEVEL_SEED=8053335938660539988
             - GAMEMODE=survival
             - DIFFICULTY=hard
             - ALLOW_CHEATS=false

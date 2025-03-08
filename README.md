@@ -64,3 +64,13 @@ How I run scripts on bedrock server hosted on Ubuntu Server 22.04:
     "xuid": "2623078711549468"
   }
 ]
+
+# to enable Beta API
+- copy level.dat
+- use NBT Viewer
+    - set "saved_with_toggled_experiments 1"
+    - add "gametest 1" (byte)
+
+# Canopy notes
+- After getting canopy setup on the server, to enable the statistics plugin, must give CanopyAdmin
+  - /tag @a add CanopyAdmin (seems user must be in game in order to apply this tag)
