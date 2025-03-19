@@ -3,6 +3,7 @@ services:
         image: itzg/minecraft-bedrock-server:latest
         ports:
             - 19132:19132/udp
+        network_mode: host
         environment:
             - EULA=true
             - PACKAGE_BACKUP_KEEP=5
